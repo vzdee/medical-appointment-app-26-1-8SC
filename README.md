@@ -1,3 +1,20 @@
+<h1>Nombre: Mario Alberto Mendoza Caceres </h1>
+<h1>Proyecto: Medical Appointment App</h1>
+<h1> Objetivos General:</h1>
+# Desarrollar una aplicación web para la gestión de citas médicas que permita a los pacientes agendar, consultar y cancelar citas de manera sencilla, mientras que el personal médico y administrativo pueda administrar horarios, servicios y pacientes de forma eficiente.
+# El sistema busca optimizar el proceso de atención médica, reducir tiempos de espera y mejorar la organización de las citas mediante una plataforma centralizada y fácil de usar.
+
+<h1> Tecnologias a usar: </h1>
+# Laravel
+# Laravel Blade
+# Laravel Eloquent ORM
+# Laravel Migrations
+# Laravel Routing
+# Laravel Controllers
+# Laravel Authentication
+# Composer
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
