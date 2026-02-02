@@ -1,18 +1,20 @@
 <h1>Nombre: Mario Alberto Mendoza Caceres </h1>
 <h1>Proyecto: Medical Appointment App</h1>
-<h1> Objetivos General:</h1>
-# Desarrollar una aplicación web para la gestión de citas médicas que permita a los pacientes agendar, consultar y cancelar citas de manera sencilla, mientras que el personal médico y administrativo pueda administrar horarios, servicios y pacientes de forma eficiente.
-# El sistema busca optimizar el proceso de atención médica, reducir tiempos de espera y mejorar la organización de las citas mediante una plataforma centralizada y fácil de usar.
+<h3> Objetivos General:</h3>
+- Desarrollar una aplicación web para la gestión de citas médicas que permita a los pacientes agendar, consultar y cancelar citas de manera sencilla, mientras que el personal médico y administrativo pueda administrar horarios, servicios y pacientes de forma eficiente.
+- El sistema busca optimizar el proceso de atención médica, reducir tiempos de espera y mejorar la organización de las citas mediante una plataforma centralizada y fácil de usar.
 
-<h1> Tecnologias a usar: </h1>
-# Laravel
-# Laravel Blade
-# Laravel Eloquent ORM
-# Laravel Migrations
-# Laravel Routing
-# Laravel Controllers
-# Laravel Authentication
-# Composer
+<h3> Tecnologias a usar: </h3>
+
+- **Laravel** – Framework backend en PHP para la lógica del sistema  
+- **PHP** – Lenguaje principal del proyecto  
+- **MySQL** – Base de datos relacional para el almacenamiento de la información  
+- **Blade** – Motor de plantillas de Laravel  
+- **HTML5** – Estructura de las vistas  
+- **CSS3** – Estilos de la interfaz de usuario  
+- **JavaScript** – Interactividad del lado del cliente  
+- **Composer** – Gestión de dependencias en PHP  
+- **Git & GitHub** – Control de versiones y repositorio del proyecto 
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
