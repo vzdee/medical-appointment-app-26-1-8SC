@@ -1,6 +1,7 @@
 <h1>Nombre: Mario Alberto Mendoza Caceres </h1>
 <h1>Proyecto: Medical Appointment App</h1>
 <h3> Objetivos General:</h3>
+
 - Desarrollar una aplicación web para la gestión de citas médicas que permita a los pacientes agendar, consultar y cancelar citas de manera sencilla, mientras que el personal médico y administrativo pueda administrar horarios, servicios y pacientes de forma eficiente.
 
 - El sistema busca optimizar el proceso de atención médica, reducir tiempos de espera y mejorar la organización de las citas mediante una plataforma centralizada y fácil de usar.
