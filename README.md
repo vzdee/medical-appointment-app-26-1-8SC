@@ -1,33 +1,41 @@
-<h1>Student Name: Mario Alberto Mendoza Caceres</h1>
-<h1>Project Name: Medical Appointment App</h1>
-<h1>Instructor: Rodrigo Fidel Gaxiola Sosa</h1>
+# 🏥 Medical Appointment App
 
-<h3>General Objective:</h3>
+---
 
-<ul>
-<li>
-Develop a web application for medical appointment management that allows patients to easily schedule, view, and cancel appointments, while medical and administrative staff can efficiently manage schedules, services, and patient information.
-</li>
+## 👨‍🎓 Student Information
 
-<li>
+**Student Name:**  
+Mario Alberto Mendoza Caceres  
+
+---
+
+## 📌 Project Name
+
+**Medical Appointment App**
+
+---
+
+## 🎯 General Objective
+
+Develop a web application for medical appointment management that allows patients to schedule, view, and cancel appointments easily, while medical and administrative staff can efficiently manage schedules, services, and patient information.
+
 The system aims to optimize the healthcare service process, reduce waiting times, and improve appointment organization through a centralized and user-friendly platform.
-</li>
-</ul>
 
-<h3>Technologies to be Used:</h3>
+---
 
-<ul>
-<li><strong>Laravel</strong> – PHP backend framework for handling the system logic</li>
-<li><strong>PHP</strong> – Main programming language of the project</li>
-<li><strong>MySQL</strong> – Relational database for data storage</li>
-<li><strong>Blade</strong> – Laravel's templating engine</li>
-<li><strong>HTML5</strong> – Structure of the views</li>
-<li><strong>CSS3</strong> – User interface styling</li>
-<li><strong>JavaScript</strong> – Client-side interactivity</li>
-<li><strong>Composer</strong> – Dependency management tool for PHP</li>
-<li><strong>Git & GitHub</strong> – Version control and project repository</li>
-</ul>
+## 🛠 Technologies to be Used
 
+- **Laravel** – Backend framework in PHP for handling the system logic  
+- **PHP** – Main programming language of the project  
+- **MySQL** – Relational database for data storage  
+- **Blade** – Laravel templating engine  
+- **HTML5** – Structure of the views  
+- **CSS3** – User interface styling  
+- **JavaScript** – Client-side interactivity  
+- **Composer** – Dependency management tool for PHP  
+- **Git & GitHub** – Version control and project repository  
+
+---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
