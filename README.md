@@ -1,22 +1,32 @@
-<h1>Nombre: Mario Alberto Mendoza Caceres </h1>
-<h1>Proyecto: Medical Appointment App</h1>
-<h3> Objetivos General:</h3>
+<h1>Student Name: Mario Alberto Mendoza Caceres</h1>
+<h1>Project Name: Medical Appointment App</h1>
+<h1>Instructor: Rodrigo Fidel Gaxiola Sosa</h1>
 
-- Desarrollar una aplicación web para la gestión de citas médicas que permita a los pacientes agendar, consultar y cancelar citas de manera sencilla, mientras que el personal médico y administrativo pueda administrar horarios, servicios y pacientes de forma eficiente.
+<h3>General Objective:</h3>
 
-- El sistema busca optimizar el proceso de atención médica, reducir tiempos de espera y mejorar la organización de las citas mediante una plataforma centralizada y fácil de usar.
+<ul>
+<li>
+Develop a web application for medical appointment management that allows patients to easily schedule, view, and cancel appointments, while medical and administrative staff can efficiently manage schedules, services, and patient information.
+</li>
 
-<h3> Tecnologias a usar: </h3>
+<li>
+The system aims to optimize the healthcare service process, reduce waiting times, and improve appointment organization through a centralized and user-friendly platform.
+</li>
+</ul>
 
-- **Laravel** – Framework backend en PHP para la lógica del sistema  
-- **PHP** – Lenguaje principal del proyecto  
-- **MySQL** – Base de datos relacional para el almacenamiento de la información  
-- **Blade** – Motor de plantillas de Laravel  
-- **HTML5** – Estructura de las vistas  
-- **CSS3** – Estilos de la interfaz de usuario  
-- **JavaScript** – Interactividad del lado del cliente  
-- **Composer** – Gestión de dependencias en PHP  
-- **Git & GitHub** – Control de versiones y repositorio del proyecto 
+<h3>Technologies to be Used:</h3>
+
+<ul>
+<li><strong>Laravel</strong> – PHP backend framework for handling the system logic</li>
+<li><strong>PHP</strong> – Main programming language of the project</li>
+<li><strong>MySQL</strong> – Relational database for data storage</li>
+<li><strong>Blade</strong> – Laravel's templating engine</li>
+<li><strong>HTML5</strong> – Structure of the views</li>
+<li><strong>CSS3</strong> – User interface styling</li>
+<li><strong>JavaScript</strong> – Client-side interactivity</li>
+<li><strong>Composer</strong> – Dependency management tool for PHP</li>
+<li><strong>Git & GitHub</strong> – Version control and project repository</li>
+</ul>
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
