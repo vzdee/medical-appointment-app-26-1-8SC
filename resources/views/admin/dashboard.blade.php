@@ -1,3 +1,3 @@
 <x-admin-layout>
-  hOLA ddesde el panel de ctrl admin.
+  Hola desde el panel administrador.
 </x-admin-layout>

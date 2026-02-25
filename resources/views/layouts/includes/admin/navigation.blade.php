@@ -12,8 +12,8 @@
           </svg>
         </button>
         <a href="/" class="flex ms-2 md:me-24">
-          <img src="{{asset('img/logo_personal.svg')}}" class="h-10 me-2" alt="Logo"/>
-          <span class="self-center text-lg font-semibold whitespace-nowrap text-black">Medical Appointment</span>
+          <img src="{{asset('img/logo_personal.svg')}}" class="h-6 me-3" alt="Logo"/>
+          <span class="self-center text-lg font-semibold whitespace-nowrap text-black"></span>
         </a>
       </div>
       <div class="flex items-center">

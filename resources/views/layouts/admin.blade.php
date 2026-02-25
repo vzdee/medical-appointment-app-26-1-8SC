@@ -19,12 +19,12 @@
     @livewireStyles
 </head>
 
-<body class="font-sans antialiased bg-grey-20">
-    @include('layouts.includes.admin.navigation');
-    @include('layouts.includes.admin.sidebar');
+<body class="font-sans antialiased bg-grey-50">
+    @include('layouts.includes.admin.navigation')
+    @include('layouts.includes.admin.sidebar')
     <div class="p-4 sm:ml-64 mt-14">
-        <div class="mt-4">
-            {{$slot}}
+        <div class="mt-14">
+            {{ $slot }}
         </div>
     </div>
     @stack('modals')
