@@ -19,6 +19,9 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    {{-- SweetAlerts --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     {{-- WireUI --}}
     <wireui:scripts />
     
@@ -30,13 +33,23 @@
     @include('layouts.includes.admin.navigation')
     @include('layouts.includes.admin.sidebar')
     <div class="p-4 sm:ml-64 mt-14">
-        <div class="mt-14">
+
+        <div class="mt-14 flex items-center justify-between w-full mt-14">
             @include('layouts.includes.admin.breadcrumb')
+            @isset($action)
+            <div>{{ $action }}</div>
+            @endisset
         </div>
         {{ $slot }}
         
     </div>
     @stack('modals')
+
+    @if(@session('swal'))
+        <script>
+            Swal.fire(@json(session('swal')));
+        </script>
+        @endif
 
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>

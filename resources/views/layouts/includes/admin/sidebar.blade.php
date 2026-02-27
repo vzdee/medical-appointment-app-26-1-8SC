@@ -8,30 +8,14 @@
             'active' => request()->routeIs('admin.dashboard'),
         ],
         [
-            'header' => 'Administración',
+            'header' => 'Gestión',
         ],
         [
-            'name' => 'Tienda',
-            'icon' => 'fa-solid fa-users',
-            'href' => route('admin.dashboard'),
-            'active' => request()->routeIs('admin.dashboard'),
-            'submenu' => [
-                [
-                    'name' => 'Doctores',
-                    'href' => '#',
-                    'active' => false,
-                ],
-                [
-                    'name' => 'Enfermeras',
-                    'href' => '#',
-                    'active' => false,
-                ],
-                [
-                    'name' => 'Pacientes',
-                    'href' => '#',
-                    'active' => false,
-                ],
-            ],
+            'name' => 'Roles y Permisos',
+            'icon' => 'fa-solid fa-shield-halved',
+            'href' => route('admin.roles.index'),
+            'active' => request()->routeIs('admin.roles.*'),
+
         ],
     ];
 @endphp
