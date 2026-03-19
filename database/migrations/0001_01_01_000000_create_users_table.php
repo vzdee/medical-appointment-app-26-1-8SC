@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            //nuevos campos para evitar problemas con los formularios de usersSeeder
+            $table->string('id_number');
+            $table->string('address');
+            $table->string('phone');
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();

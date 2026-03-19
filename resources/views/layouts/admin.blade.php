@@ -1,6 +1,6 @@
 @props([
     'title' => config('app.name', 'Laravel'),
-    'breadcrumbs' => [] //vacio por default
+    'breadcrumbs' => [], //vacio por default
 ])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -24,7 +24,7 @@
 
     {{-- WireUI --}}
     <wireui:scripts />
-    
+
     <!-- Styles -->
     @livewireStyles
 </head>
@@ -37,19 +37,19 @@
         <div class="mt-14 flex items-center justify-between w-full mt-14">
             @include('layouts.includes.admin.breadcrumb')
             @isset($action)
-            <div>{{ $action }}</div>
+                <div>{{ $action }}</div>
             @endisset
         </div>
         {{ $slot }}
-        
+
     </div>
     @stack('modals')
 
-    @if(@session('swal'))
+    @if (@session('swal'))
         <script>
             Swal.fire(@json(session('swal')));
         </script>
-        @endif
+    @endif
 
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
