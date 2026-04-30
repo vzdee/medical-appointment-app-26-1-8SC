@@ -2,7 +2,7 @@
 <li class="me-2">
     <a href="#" x-on:click="tab = '{{ $tab }}'"
         :class="{
-            'text-red-600 border-red-600': {{ $hasError ? 'true' : 'false' }} &&
+            'text-red-600 border-red-600': {{ $error ? 'true' : 'false' }} &&
                 tab !== '{{ $tab }}',
             'text-blue-600 border-blue-600 active': tab === '{{ $tab }}' && !
                 {{ $error ? 'true' : 'false' }},

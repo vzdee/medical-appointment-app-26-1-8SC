@@ -288,7 +288,7 @@ return [
         'allergies'                => 'alergias conocidas',
         'chronic_conditions'       => 'enfermedades crónicas',
         'surgical_history'         => 'historial quirúrgico',
-        'family_allergies'         => 'alergias familiares',
+        'family_history'           => 'historial familiar',
         'observations'             => 'observaciones',
         'emergency_contact_name'   => 'nombre del contacto de emergencia',
         'emergency_contact_phone'  => 'teléfono del contacto de emergencia',

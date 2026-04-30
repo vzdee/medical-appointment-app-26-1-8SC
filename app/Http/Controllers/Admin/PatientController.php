@@ -50,9 +50,29 @@ class PatientController extends Controller
      */
     public function edit(Patient $patient)
     {
-        //
+        //colocamos la vista default
+        $initialTab = 'datos-personales';
+        // definimos campos que pueden tener errores de validación
+        $errorGroups = [
+            'antecedentes' => ['allergies', 'chronic_conditions', 'surgical_history', 'family_history'],
+            'informacion-general' => ['blood_type_id', 'observations'],
+            'contacto-emergencia' => ['emergency_contact_name', 'emergency_contact_phone', 'emergency_contact_relationship'],
+        ];
+        //verificamos si existen errores en la sesión (después de una redirección por error de validación)
+        $errors = session('errors');
+        if ($errors) {
+            //verificamos errores de validación y asignamos la pestaña correspondiente del grupo
+            foreach ($errorGroups as $tabName => $fields) {
+                if ($errors->hasAny($fields)) {
+                    $initialTab = $tabName;
+                    break; // si encontramos errores en un grupo, asignamos esa pestaña y salimos del loop
+                }
+            }
+
+        }
+
         $bloodTypes = BloodType::all();
-        return view('admin.patients.edit', compact('patient', 'bloodTypes'));
+        return view('admin.patients.edit', compact('patient', 'bloodTypes', 'initialTab', 'errorGroups'));
     }
 
     /**
@@ -66,7 +86,7 @@ class PatientController extends Controller
             'allergies' => 'nullable|string|min:3|max:255',
             'chronic_conditions' => 'nullable|string|min:3|max:255',
             'surgical_history' => 'nullable|string|min:3|max:255',
-            'family_allergies' => 'nullable|string|min:3|max:255',
+            'family_history' => 'nullable|string|min:3|max:255',
             'observations' => 'nullable|string|min:3|max:255',
             'emergency_contact_name' => 'nullable|string|min:3|max:255',
             'emergency_contact_phone' => ['nullable', 'string', 'min:10', 'max:12', 'regex:/^[0-9]+$/'],
