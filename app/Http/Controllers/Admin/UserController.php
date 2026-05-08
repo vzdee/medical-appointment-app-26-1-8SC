@@ -55,13 +55,21 @@ class UserController extends Controller
             'text' => 'El usuario ha sido creado corrretamente',
         ]);
         //si el usuario es un paciente, reedirigimos a agregar mas daotos de tipo de sangre
-        if($user::role('paciente')){
+        if($user->hasRole('Paciente')){
             //se crea el campo de paciente
-            $patient = $user->patient()->create();
+            $patient = $user->patient()->firstOrCreate();
             //reidirigimos a la vista de agregar datos de paciente
-            return redirect() ->route('admin.patients.edit', $patient);
+            return redirect()->route('admin.patients.edit', $patient);
         }
-        return redirect(route('admin.users.edit'))->with('success', 'User created successfully');
+
+        //si el usuario es doctor, creamos su perfil de doctor
+        if($user->hasRole('Doctor')){
+            $doctor = $user->doctor()->firstOrCreate();
+            // redirigimos a doctors edit si existiera, o al index
+            return redirect()->route('admin.doctors.index');
+        }
+
+        return redirect(route('admin.users.index'))->with('success', 'User created successfully');
     }
 
     /**

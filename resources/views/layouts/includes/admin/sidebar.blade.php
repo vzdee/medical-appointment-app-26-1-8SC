@@ -26,6 +26,21 @@
             'icon' => 'fa-solid fa-user-injured',
             'href' => route('admin.patients.index'),
             'active' => request()->routeIs('admin.patients.*'),
+        ],[
+            'name' => 'Doctores',
+            'icon' => 'fa-solid fa-user-md',
+            'href' => route('admin.doctors.index'),
+            'active' => request()->routeIs('admin.doctors.*'),
+        ],[
+            'name' => 'Citas Médicas',
+            'icon' => 'fa-solid fa-calendar-check',
+            'href' => route('admin.appointments.index'),
+            'active' => request()->routeIs('admin.appointments.*'),
+        ],[
+            'name' => 'Calendario',
+            'icon' => 'fa-solid fa-calendar',
+            'href' => route('admin.calendar.index'),
+            'active' => request()->routeIs('admin.calendar.index'),
         ],
     ];
 @endphp

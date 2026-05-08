@@ -16,7 +16,7 @@
       <x-validation-errors class="mb-4" />
         <form action="{{ route('admin.users.update', $user) }}" method="POST">
             @csrf
-            @method('PUT');
+            @method('PUT')
             <div class="space-y-4">
                 <div class="grid lg:grid-cols-2 gap-4">
                     <x-wire-input label="Nombre" name="name" placeholder="Nombre del usuario" autocomplete="email" required :value="old('name', $user->name)"
@@ -41,7 +41,7 @@
   
                   </div>
                   <div class="flex justify-end">
-                      <x-wire-button type="submit" blue>Actualizarr</x-wire-button>
+                      <x-wire-button type="submit" blue>Actualizar</x-wire-button>
                   </div>
             </div>
         </form>

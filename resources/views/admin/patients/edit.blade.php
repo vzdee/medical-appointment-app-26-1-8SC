@@ -128,9 +128,9 @@
 
                 <x-tab-content tab="informacion-general">
                     <div class="grid lg:grid-cols-2 gap-4">
-                        <x-wire-native-select label="Tipo de Sangre" class="mb-4" name="blood_type_id">
+                        <x-wire-native-select label="Tipo de Sangre" class="mb-4" name="bloodtype_id">
                             @foreach ($bloodTypes as $bloodType)
-                                <option value="{{ $bloodType->id }}" @selected(old('blood_type_id', $patient->blood_type_id) == $bloodType->id)>
+                                <option value="{{ $bloodType->id }}" @selected(old('bloodtype_id', $patient->bloodtype_id) == $bloodType->id)>
                                     {{ $bloodType->name }}
                                 </option>
                             @endforeach

@@ -55,7 +55,7 @@ class PatientController extends Controller
         // definimos campos que pueden tener errores de validación
         $errorGroups = [
             'antecedentes' => ['allergies', 'chronic_conditions', 'surgical_history', 'family_history'],
-            'informacion-general' => ['blood_type_id', 'observations'],
+            'informacion-general' => ['bloodtype_id', 'observations'],
             'contacto-emergencia' => ['emergency_contact_name', 'emergency_contact_phone', 'emergency_contact_relationship'],
         ];
         //verificamos si existen errores en la sesión (después de una redirección por error de validación)
@@ -82,7 +82,7 @@ class PatientController extends Controller
     {
         //
         $data = $request->validate([
-            'blood_type_id' => 'nullable|exists:blood_types,id',
+            'bloodtype_id' => 'nullable|exists:blood_types,id',
             'allergies' => 'nullable|string|min:3|max:255',
             'chronic_conditions' => 'nullable|string|min:3|max:255',
             'surgical_history' => 'nullable|string|min:3|max:255',
